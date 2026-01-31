@@ -1,108 +1,102 @@
-# 3. DOCUMENTO DE ESPECIFICAÇÃO DE REQUISITOS DE SOFTWARE
+## Documento de Requisitos do Sistema
 
-Nesta parte do trabalho você deve detalhar a documentação dos requisitos do sistema proposto de acordo com as seções a seguir. Ressalta-se que aqui é utilizado como exemplo um sistema de gestão de cursos de aperfeiçoamento.
+## Definição Curta
 
-## 3.1 Objetivos deste documento
-Descrever a motivação deste documento, para que pessoas leigas ou não envolvidas no processo possam estar cientes.
+Descreva rapidamente o que é o projeto
 
-## 3.2 Escopo do produto
+## Termos e Significados
 
-### 3.2.1 Nome do produto e seus componentes principais
-Ex: O produto será denominado SCCA – Sistema de Cadastro de Cursos de Aperfeiçoamento. Ele terá somente um componente (módulo) com os devidos elementos necessários à gestão de cursos.
+Adicione aqui, qualquer termo tecníco junto de sua descrição.
 
-### 3.2.2 Missão do produto
-Documentar a missão principal do produto:
-Ex: Gerenciar informações sobre a oferta de cursos de aperfeiçoamento, gerenciar a composição das turmas, alunos, professores e matrículas. 
+## Introdução
 
-### 3.2.3 Limites do produto
-Documentar possíveis limitações que o MVP do produto deve encontrar após o seu desenvolvimento:
-Ex: O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcelas do curso, pagamento a professore e agendamentos. O SCCA não contempla o atendimento a vários cursos de Sistemas de Informação de outras unidades da PUC Minas.
+Descreva o que é projeto, sua missão, benefícios, etc.
 
-### 3.2.4 Benefícios do produto
+## Objetivos
+Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+- O objetivo geral deve resumir e apresentar a ideia central de um trabalho, descrevendo também a sua finalidade. 
+- Os objetivos específicos darão uma maior delimitação ao tema, além de detalhar os processos necessários para a realização do trabalho.
 
-| # | Benefício | Valor para o Cliente |
-|--------------------|------------------------------------|----------------------------------------|
-|1	| Facilidade no cadastro de dados |	Essencial |
-|2 | Facilidade na recuperação de informações | Essencial | 
-|3 | Segurança no cadastro de matrículas | Essencial | 
-|4	| Melhoria na comunicação com os alunos	| Recomendável | 
+### Objetivo Principal
+### Objetivo Secundário
 
-## 3.3 Descrição geral do produto
+# Caracteristicas do Usuário
+## Público Alvo
+### Stakeholders
 
-### 3.3.1 Requisitos Funcionais
+Descreva aqui os stakeholders do projeto, ou seja, todos aqueles que tem interesse ou estejam envolvidos no projeto, por exemplo:
+- Stakeholders internos: patrocinadores, membros de equipe, etc;
+- Stakeholders externos: quem vai consumir o produto.
 
-| Código | Requisito Funcional (Funcionalidade) | Descrição |
+### Personas
+
+Crie usuários fictícios que utilizaria o sistema desenvolvido, descrevendo suas características, necessidades, etc.
+
+# Limitações
+
+Descreva aqui TODAS as limitações que o escopo do MVP pode acabar enfrentando, desde free tier de serviços consumidos até limite de trafego suportado.
+
+# Requisitos do Sistema
+
+Este documento apresenta duas categorias de requisitos de sistema para permitir que os clientes compreendam o que e como este produto será entregue:
+
+**Requisitos funcionais:** os requisitos funcionais são responsáveis por gerenciar e organizar as funcionalidades presentes no sistema.
+
+**Requisitos não funcionais:** os requisitos não funcionais são responsáveis por indicar funcionalidades que não possuem uma relação direta com as funcionalidades do projeto, mas que têm um impacto indireto em seu andamento.
+
+Além disso, é de extrema importância compreender como funciona a sintaxe de cada requisito funcional neste projeto. A seguir, está a explicação:
+
+**0101**
+
+* **Primeiros dois dígitos (marcados em vermelho):** indicam o ID do módulo que será desenvolvido;
+* **Últimos dois dígitos (marcados em azul):** indicam a funcionalidade que será desenvolvida.
+
+Um exemplo de uso é o requisito de sistema **0100**, que será descrito abaixo, e que indica que o módulo de autenticação e cadastro, de ID **(01)**, conterá a funcionalidade **(00)** responsável por gerenciar os fluxos de cadastro. Isso será importante quando os desenvolvedores de software iniciarem seus trabalhos, pois permitirá identificar e categorizar mais rapidamente cada módulo e funcionalidade presentes no sistema.
+
+## Módulos
+
+Liste e descreva TODOS os módulos que o sistema deve conter internamente, desde módulos de autenticação e login, até integrações em plataformas de monitoramento, como o Cloud Monitoring ou Protheus.
+
+## Requisitos Funcionais
+
+| Código | Requisito Funcional | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
 | RF1 | Gerenciar Curso de Aperfeiçoamento |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Cursos de Aperfeiçoamento |
-| RF2 |	Gerenciar Professor	| Processamento de Inclusão, Alteração, Exclusão e Consulta de professores |
-| RF3	| Gerenciar Matrícula |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Matrículas de alunos em Cursos de Aperfeiçoamento |
-| ... |	...	| ... |
 
-### 3.3.2 Requisitos Não Funcionais
+## Requisitos Não Funcionais
 
-| Código | Requisito Não Funcional (Restrição) |
-|--------------------|------------------------------------|
-| RNF1 | O ambiente operacional a ser utilizado é o Windows XP. |
-| RNF2 | O sistema deverá executar em um computador configurado com uma impressora de tecnologia laser ou de jato de tinta, a ser usada para impressão dos relatórios. |
-| RNF3 |	Segurança	O produto deve restringir o acesso por meio de senhas individuais para o usuário. |
-| ... |	... |	... |
+### Requisitos de Padronização
 
-### 3.3.3 Usuários 
+| Código | Requisito de Padronização | Descrição |
+|--------------------|------------------------------------|----------------------------------------|
+| RNF1 | Gerenciar Curso de Aperfeiçoamento |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Cursos de Aperfeiçoamento |
 
-| Ator | Descrição |
-|--------------------|------------------------------------|
-| Coordenador |	Usuário gerente do sistema responsável pelo cadastro e manutenção de cursos de aperfeiçoamento. Possui acesso geral ao sistema. |
-| Secretaria |	Usuário responsável por registros de alunos, professores, turmas e gerência de matrículas. |
-| ... |	... |	... |
+### Requisitos de Segurança
 
-## 3.4 Modelagem do Sistema
- 
-### 3.4.1 Descrições de Casos de Uso
+| Código | Requisito de Segurança | Descrição |
+|--------------------|------------------------------------|----------------------------------------|
+| RNF2 | Gerenciar Curso de Aperfeiçoamento |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Cursos de Aperfeiçoamento |
 
-Cada caso de uso deve ter a sua descrição representada nesta seção. Exemplo:
+### Requisitos de Infraestrutura
 
-#### Gerenciar Professor (CSU01)
+| Código | Requisito de Infraestrutura | Descrição |
+|--------------------|------------------------------------|----------------------------------------|
+| RNF3 | Gerenciar Curso de Aperfeiçoamento |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Cursos de Aperfeiçoamento |
 
-Sumário: A Secretária realiza a gestão (inclusão, remoção, alteração e consulta) dos dados sobre professores.
+# Arquitetura
 
-Ator Primário: Secretária.
+Coloque aqui o diagrama da infraestrutura do sistema criado juntamente com sua descrição.
 
-Ator Secundário: Coordenador.
+# Fluxos
 
-Pré-condições: A Secretária deve ser validada pelo Sistema.
+Adicione aqui o fluxo da aplicação, por exemplo, processo de login, registro financeiro, envio de notificação, etc.
 
-Fluxo Principal:
+# Casos de Uso
 
-1) 	A Secretária requisita manutenção de professores.
-2) 	O Sistema apresenta as operações que podem ser realizadas: inclusão de um novo professor, alteração de um professor, a exclusão de um professor e a consulta de dados de um professor.
-3) 	A Secretária seleciona a operação desejada: Inclusão, Exclusão, Alteração ou Consulta, ou opta por finalizar o caso de uso.
-4) 	Se a Secretária desejar continuar com a gestão de professores, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
+# ERD
 
-Fluxo Alternativo (3): Inclusão
+Adicione a estrutura de dados do sistema a ser utilizada aqui.
 
-a)	A Secretária requisita a inclusão de um professor. <br>
-b)	O Sistema apresenta uma janela solicitando o CPF do professor a ser cadastrado. <br>
-c)	A Secretária fornece o dado solicitado. <br>
-d)	O Sistema verifica se o professor já está cadastrado. Se sim, o Sistema reporta o fato e volta ao início; caso contrário, apresenta um formulário em branco para que os detalhes do professor (Código, Nome, Endereço, CEP, Estado, Cidade, Bairro, Telefone, Identidade, Sexo, Fax, CPF, Data do Cadastro e Observação) sejam incluídos. <br>
-e)	A Secretária fornece os detalhes do novo professor. <br>
-f)	O Sistema verifica a validade dos dados. Se os dados forem válidos, inclui o novo professor e a grade listando os professores cadastrados é atualizada; caso contrário, o Sistema reporta o fato, solicita novos dados e repete a verificação. <br>
+# Custos
 
-Fluxo Alternativo (3): Remoção
-
-a)	A Secretária seleciona um professor e requisita ao Sistema que o remova. <br>
-b)	Se o professor pode ser removido, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato. <br>
-
-Fluxo Alternativo (3): Alteração
-
-a)	A Secretária altera um ou mais dos detalhes do professor e requisita sua atualização. <br>
-b)	O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados na lista de professores, caso contrário, o erro é reportado. <br>
- 
-Fluxo Alternativo (3): Consulta
-
-a)	A Secretária opta por pesquisar pelo nome ou código e solicita a consulta sobre a lista de professores. <br>
-b)	O Sistema apresenta uma lista professores. <br>
-c)	A Secretária seleciona o professor. <br>
-d)	O Sistema apresenta os detalhes do professor no formulário de professores. <br>
-
-Pós-condições: Um professor foi inserido ou removido, seus dados foram alterados ou apresentados na tela.
-
+Adicione aqui o calculo dos custos de infraestrutura para executar o sistema
