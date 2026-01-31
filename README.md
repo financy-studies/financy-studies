@@ -45,21 +45,6 @@ Descreva aqui TODAS as limitações que o escopo do MVP pode acabar enfrentando,
 
 # 10. Requisitos do Sistema
 
-Este documento apresenta duas categorias de requisitos de sistema para permitir que os clientes compreendam o que e como este produto será entregue:
-
-**Requisitos funcionais:** os requisitos funcionais são responsáveis por gerenciar e organizar as funcionalidades presentes no sistema.
-
-**Requisitos não funcionais:** os requisitos não funcionais são responsáveis por indicar funcionalidades que não possuem uma relação direta com as funcionalidades do projeto, mas que têm um impacto indireto em seu andamento.
-
-Além disso, é de extrema importância compreender como funciona a sintaxe de cada requisito funcional neste projeto. A seguir, está a explicação:
-
-**0101**
-
-* **Primeiros dois dígitos (marcados em vermelho):** indicam o ID do módulo que será desenvolvido;
-* **Últimos dois dígitos (marcados em azul):** indicam a funcionalidade que será desenvolvida.
-
-Um exemplo de uso é o requisito de sistema **0100**, que será descrito abaixo, e que indica que o módulo de autenticação e cadastro, de ID **(01)**, conterá a funcionalidade **(00)** responsável por gerenciar os fluxos de cadastro. Isso será importante quando os desenvolvedores de software iniciarem seus trabalhos, pois permitirá identificar e categorizar mais rapidamente cada módulo e funcionalidade presentes no sistema.
-
 ## 10.1 Módulos
 
 Liste e descreva TODOS os módulos que o sistema deve conter internamente, desde módulos de autenticação e login, até integrações em plataformas de monitoramento, como o Cloud Monitoring ou Protheus.
@@ -68,7 +53,7 @@ Liste e descreva TODOS os módulos que o sistema deve conter internamente, desde
 
 | Código | Requisito Funcional | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| RF0101 | Autenticação |	O sistema deve realizar o processo de autenticação |
+| RF01 | Autenticação |	O sistema deve realizar o processo de autenticação |
 
 ## 10.3 Requisitos Não Funcionais
 
