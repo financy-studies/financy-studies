@@ -35,57 +35,57 @@ Descreva aqui os stakeholders do projeto, ou seja, todos aqueles que tem interes
 - Stakeholders internos: patrocinadores, membros de equipe, etc;
 - Stakeholders externos: quem vai consumir o produto.
 
-### 7. Personas
+### 6.3 Personas
 
 Crie usuários fictícios que utilizaria o sistema desenvolvido, descrevendo suas características, necessidades, etc.
 
-# 8. Limitações
+# 7. Limitações
 
 Descreva aqui TODAS as limitações que o escopo do MVP pode acabar enfrentando, desde free tier de serviços consumidos até limite de trafego suportado.
 
-# 9. Requisitos do Sistema
+# 8. Requisitos do Sistema
 
-## 9.1 Módulos
+## 8.1 Módulos
 
 Liste e descreva TODOS os módulos que o sistema deve conter internamente, desde módulos de autenticação e login, até integrações em plataformas de monitoramento, como o Cloud Monitoring ou Protheus.
 
-## 9.2 Requisitos Funcionais
+## 8.2 Requisitos Funcionais
 
 | Código | Requisito Funcional | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
 | RF01 | Autenticação |	O sistema deve realizar o processo de autenticação |
 
-## 9.3 Requisitos Não Funcionais
+## 8.3 Requisitos Não Funcionais
 
-### 9.3.1 Requisitos de Padronização
+### 8.3.1 Requisitos de Padronização
 
 | Código | Requisito de Padronização | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
 | RNF1 | Trello |	A gestão de tarefas do projeto deve utilizar o trello |
 
-### 9.3.2 Requisitos de Segurança
+### 8.3.2 Requisitos de Segurança
 
 | Código | Requisito de Segurança | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
 | RNF2 | Criptografia |	Dados considerados sensíveis, como senhas, devem ser criptografados utilizando o algoritmo Bcrypt |
 
-### 9.3.3 Requisitos de Infraestrutura
+### 8.3.3 Requisitos de Infraestrutura
 
 | Código | Requisito de Infraestrutura | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
 | RNF3 | Multi-cloud |	O sistema deve utilizar de um ambiente multi-cloud para minimizar os custos financeiros no estágio de MVP |
 
-# 10. Arquitetura
+# 9. Arquitetura
 
 ![eb7352f8-0099-45f4-85a1-85c9cd3dfade](https://github.com/user-attachments/assets/b0b5b3ad-0f9a-44a8-9f2f-00222d3d5b30)
 
 Coloque aqui o diagrama da infraestrutura do sistema criado juntamente com sua descrição.
 
-# 11. Fluxos
+# 10. Fluxos
 
 Adicione aqui o fluxo da aplicação, por exemplo, processo de login, registro financeiro, envio de notificação, etc.
 
-# 12. Casos de Uso
+# 11. Casos de Uso
 
 #### Gerenciar Professor (CSU01) (EXEMPLO)
 
@@ -133,14 +133,14 @@ d)	O Sistema apresenta os detalhes do professor no formulário de professores. <
 Pós-condições: Um professor foi inserido ou removido, seus dados foram alterados ou apresentados na tela.
 
 
-# 13. ERD
+# 12. ERD
 
 ![da46ca69-262d-40d9-893a-883f30a2061d](https://github.com/user-attachments/assets/2f1f4d88-ef4d-485d-87e7-0c22fb2334ba)
 
 Adicione a estrutura de dados do sistema a ser utilizada aqui.
 
-# 14. Custos
+# 13. Custos
 
 Adicione aqui o calculo dos custos de infraestrutura para executar o sistema
 
-# 15. Referências
+# 14. Referências
