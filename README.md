@@ -68,7 +68,7 @@ Liste e descreva TODOS os módulos que o sistema deve conter internamente, desde
 
 | Código | Requisito Funcional | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| RF1 | Gerenciar Curso de Aperfeiçoamento |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Cursos de Aperfeiçoamento |
+| RF0101 | Gerenciar Curso de Aperfeiçoamento |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Cursos de Aperfeiçoamento |
 
 ## 10.3 Requisitos Não Funcionais
 
