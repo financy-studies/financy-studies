@@ -2,145 +2,201 @@
 
 ## 1. Definição Curta
 
-Descreva rapidamente o que é o projeto
+Uma descrição sucinta do projeto: o que é, qual problema resolve e seu público-alvo. (Use 1–2 frases claras.)
 
-## 2. Integrantes
+**Exemplo:** `Sistema web para gerenciamento de agendamentos e pagamentos de consultórios, voltado para profissionais de saúde autônomos.`
 
-* Nome completo do integrante 1
-* Nome completo do integrante 2
-* Nome completo do integrante 3
-* Nome completo do integrante 4 
+---
 
-## 3. Termos e Significados
+## 2. Introdução
 
-Adicione aqui, qualquer termo técnico junto de sua descrição.
+Contextualize o projeto com um parágrafo explicando a missão, visão, principais benefícios esperados e o valor agregado ao usuário final. Indique também o escopo alto (MVP) e limitações temporais, se houver.
 
-## 4. Introdução
+---
 
-Descreva o que é projeto, sua missão, benefícios, etc.
+## 3. Objetivos
 
-## 5. Objetivos
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-- O objetivo geral deve resumir e apresentar a ideia central de um trabalho, descrevendo também a sua finalidade. 
-- Os objetivos específicos darão uma maior delimitação ao tema, além de detalhar os processos necessários para a realização do trabalho.
+Explique o objetivo geral do trabalho e liste objetivos específicos que detalhem as entregas e critérios de sucesso.
 
-### 5.1 Objetivo Principal
-### 5.2 Objetivo Secundário
+### 3.1 Objetivo Principal
 
-# 6. Caracteristicas do Usuário
-## 6.1 Público Alvo
+Descreva o objetivo geral em uma frase clara.
+
+### 3.2 Objetivos Secundários
+
+Liste objetivos específicos que suportam o objetivo principal (ex.: integração com gateway de pagamento, API pública, relatórios mensais, etc.).
+
+---
+
+## 4. Termos e Significados
+
+Inclua termos técnicos, siglas e conceitos usados no documento, com definições curtas. Isso evita ambiguidade nas especificações.
+
+**Exemplo:**
+
+* **MVP:** Minimum Viable Product — conjunto mínimo de funcionalidades para liberar o produto.
+* **API:** Application Programming Interface — interface para comunicação entre sistemas.
+
+---
+
+## 5. Integrantes
+
+Liste os membros da equipe com função/responsabilidade principal (não apenas nomes).
+
+* **Nome completo do integrante 1** — Product Owner / Responsável pelo escopo
+* **Nome completo do integrante 2** — Desenvolvedor Back-end
+* **Nome completo do integrante 3** — Desenvolvedor Front-end / UI
+* **Nome completo do integrante 4** — QA / DevOps
+
+---
+
+## 6. Características do Usuário
+
+Descreva quem usará o sistema, suas necessidades e comportamentos. Isso orienta prioridades de UX e requisitos.
+
+### 6.1 Público-alvo
+
+Defina o público em termos demográficos, nível técnico e contexto de uso (ex.: profissionais liberais, administradores, pacientes, etc.).
+
 ### 6.2 Stakeholders
 
-Descreva aqui os stakeholders do projeto, ou seja, todos aqueles que tem interesse ou estejam envolvidos no projeto, por exemplo:
-- Stakeholders internos: patrocinadores, membros de equipe, etc;
-- Stakeholders externos: quem vai consumir o produto.
+Liste partes interessadas internas e externas e suas expectativas principais.
+
+* **Stakeholders internos:** patrocinadores, equipe de desenvolvimento, suporte.
+* **Stakeholders externos:** clientes finais, parceiros de integração, provedores de pagamento.
 
 ### 6.3 Personas
 
-Crie usuários fictícios que utilizaria o sistema desenvolvido, descrevendo suas características, necessidades, etc.
+Crie 2–3 personas fictícias com nome, papel, objetivos e principais frustrações para guiar decisões de produto.
 
-# 7. Limitações
+**Exemplo:**
 
-Descreva aqui TODAS as limitações que o escopo do MVP pode acabar enfrentando, desde free tier de serviços consumidos até limite de trafego suportado.
+* *Maria — Clínica privada* — precisa de agendamento rápido e relatórios mensais; frustração: duplicidade de atendimentos.
 
-# 8. Requisitos do Sistema
+---
 
-## 8.1 Módulos
+## 7. Limitações
 
-Liste e descreva TODOS os módulos que o sistema deve conter internamente, desde módulos de autenticação e login, até integrações em plataformas de monitoramento, como o Cloud Monitoring ou Protheus.
+Documento de todas as limitações conhecidas do MVP: restrições técnicas, orçamentárias, de terceiros (free tiers), limites de tráfego previstos, dependências externas e requisitos regulatórios.
 
-## 8.2 Requisitos Funcionais
+**Exemplo:** limite de 10.000 requisições/mês na camada gratuita do provedor X; integração com gateway disponível apenas via API versão Y.
 
-| Código | Requisito Funcional | Descrição |
-|--------------------|------------------------------------|----------------------------------------|
-| RF01 | Autenticação |	O sistema deve realizar o processo de autenticação |
+---
 
-## 8.3 Requisitos Não Funcionais
+## 8. Requisitos do Sistema
 
-### 8.3.1 Requisitos de Padronização
+### 8.1 Módulos
 
-| Código | Requisito de Padronização | Descrição |
-|--------------------|------------------------------------|----------------------------------------|
-| RNF1 | Trello |	A gestão de tarefas do projeto deve utilizar o trello |
+Liste e descreva os módulos do sistema — cada item deve ter um nome, propósito e breve descrição de responsabilidades.
 
-### 8.3.2 Requisitos de Segurança
+**Exemplo de módulos:**
 
-| Código | Requisito de Segurança | Descrição |
-|--------------------|------------------------------------|----------------------------------------|
-| RNF2 | Criptografia |	Dados considerados sensíveis, como senhas, devem ser criptografados utilizando o algoritmo Bcrypt |
+* **Autenticação e Cadastro:** fluxos de login, cadastro, recuperação de senha e validação de conta.
+* **Gerenciamento de Usuários:** CRUD de perfis e permissões.
+* **Faturamento e Assinaturas:** criação de carteiras, cobranças recorrentes, integração com gateway.
+* **Monitoramento:** telemetria e alertas (Cloud Monitoring / Prometheus).
 
-### 8.3.3 Requisitos de Infraestrutura
+### 8.2 Requisitos Funcionais
 
-| Código | Requisito de Infraestrutura | Descrição |
-|--------------------|------------------------------------|----------------------------------------|
-| RNF3 | Multi-cloud |	O sistema deve utilizar de um ambiente multi-cloud para minimizar os custos financeiros no estágio de MVP |
+Liste os requisitos funcionais com código, título e descrição clara.
 
-# 9. Arquitetura
+| Código | Requisito Funcional | Descrição                                                                                           |
+| ------ | ------------------- | --------------------------------------------------------------------------------------------------- |
+| RF01   | Autenticação        | O sistema deve realizar o processo de autenticação (login/logout) com validação por email e tokens. |
 
-![eb7352f8-0099-45f4-85a1-85c9cd3dfade](https://github.com/user-attachments/assets/b0b5b3ad-0f9a-44a8-9f2f-00222d3d5b30)
+> Dica: adote um padrão de codificação (ex.: `RFxx`, `RF-0100`) e mantenha uma breve regra de numeração.
 
-Coloque aqui o diagrama da infraestrutura do sistema criado juntamente com sua descrição.
+### 8.3 Requisitos Não Funcionais
 
-# 10. Fluxos
+Divida em categorias: padronização, segurança, infraestrutura, performance, disponibilidade etc. Inclua código e descrição.
 
-Adicione aqui o fluxo da aplicação, por exemplo, processo de login, registro financeiro, envio de notificação, etc.
+#### 8.3.1 Requisitos de Padronização
 
-# 11. Casos de Uso
+| Código | Requisito de Padronização | Descrição                                                                       |
+| ------ | ------------------------- | ------------------------------------------------------------------------------- |
+| RNF1   | Gestão de Tarefas         | A gestão de tarefas do projeto deve utilizar o Trello (ou ferramenta definida). |
 
-#### Gerenciar Professor (CSU01) (EXEMPLO)
+#### 8.3.2 Requisitos de Segurança
 
-Sumário: A Secretária realiza a gestão (inclusão, remoção, alteração e consulta) dos dados sobre professores.
+| Código | Requisito de Segurança | Descrição                                                                                   |
+| ------ | ---------------------- | ------------------------------------------------------------------------------------------- |
+| RNF2   | Criptografia           | Dados sensíveis (senhas, tokens) devem ser armazenados criptografados com algoritmo Bcrypt. |
 
-Ator Primário: Secretária.
+#### 8.3.3 Requisitos de Infraestrutura
 
-Ator Secundário: Coordenador.
+| Código | Requisito de Infraestrutura | Descrição                                                                                     |
+| ------ | --------------------------- | --------------------------------------------------------------------------------------------- |
+| RNF3   | Multi-cloud                 | O sistema deve contemplar estratégia multi-cloud para reduzir risco e otimizar custos no MVP. |
 
-Pré-condições: A Secretária deve ser validada pelo Sistema.
+---
 
-Fluxo Principal:
+## 9. Arquitetura
 
-1) 	A Secretária requisita manutenção de professores.
-2) 	O Sistema apresenta as operações que podem ser realizadas: inclusão de um novo professor, alteração de um professor, a exclusão de um professor e a consulta de dados de um professor.
-3) 	A Secretária seleciona a operação desejada: Inclusão, Exclusão, Alteração ou Consulta, ou opta por finalizar o caso de uso.
-4) 	Se a Secretária desejar continuar com a gestão de professores, o caso de uso retorna ao passo 2; caso contrário o caso de uso termina.
+Insira o diagrama da infraestrutura e uma descrição resumida dos componentes: serviços, bancos, filas, integrações externas e responsabilidades de cada bloco.
 
-Fluxo Alternativo (3): Inclusão
+![Diagrama de Arquitetura](https://github.com/user-attachments/assets/b0b5b3ad-0f9a-44a8-9f2f-00222d3d5b30)
 
-a)	A Secretária requisita a inclusão de um professor. <br>
-b)	O Sistema apresenta uma janela solicitando o CPF do professor a ser cadastrado. <br>
-c)	A Secretária fornece o dado solicitado. <br>
-d)	O Sistema verifica se o professor já está cadastrado. Se sim, o Sistema reporta o fato e volta ao início; caso contrário, apresenta um formulário em branco para que os detalhes do professor (Código, Nome, Endereço, CEP, Estado, Cidade, Bairro, Telefone, Identidade, Sexo, Fax, CPF, Data do Cadastro e Observação) sejam incluídos. <br>
-e)	A Secretária fornece os detalhes do novo professor. <br>
-f)	O Sistema verifica a validade dos dados. Se os dados forem válidos, inclui o novo professor e a grade listando os professores cadastrados é atualizada; caso contrário, o Sistema reporta o fato, solicita novos dados e repete a verificação. <br>
+> Explique aqui: por exemplo, onde o load balancer fica, quais serviços são stateless, qual banco é primário, estratégia de backups, etc.
 
-Fluxo Alternativo (3): Remoção
+---
 
-a)	A Secretária seleciona um professor e requisita ao Sistema que o remova. <br>
-b)	Se o professor pode ser removido, o Sistema realiza a remoção; caso contrário, o Sistema reporta o fato. <br>
+## 10. Modelo de Dados (ERD)
 
-Fluxo Alternativo (3): Alteração
+Inclua o diagrama de entidade-relacionamento e uma descrição das tabelas/entidades principais, chaves, índices e restrições importantes.
 
-a)	A Secretária altera um ou mais dos detalhes do professor e requisita sua atualização. <br>
-b)	O Sistema verifica a validade dos dados e, se eles forem válidos, altera os dados na lista de professores, caso contrário, o erro é reportado. <br>
- 
-Fluxo Alternativo (3): Consulta
+![ERD](https://github.com/user-attachments/assets/2f1f4d88-ef4d-485d-87e7-0c22fb2334ba)
 
-a)	A Secretária opta por pesquisar pelo nome ou código e solicita a consulta sobre a lista de professores. <br>
-b)	O Sistema apresenta uma lista professores. <br>
-c)	A Secretária seleciona o professor. <br>
-d)	O Sistema apresenta os detalhes do professor no formulário de professores. <br>
+> Observação: documente também políticas de versionamento do schema e scripts de migração esperados.
 
-Pós-condições: Um professor foi inserido ou removido, seus dados foram alterados ou apresentados na tela.
+---
 
+## 11. Fluxos
 
-# 12. ERD
+Descreva os fluxos principais da aplicação (ex.: processo de login, cadastro, registro financeiro, envio de notificações). Para cada fluxo, inclua pré-condições, etapas e pós-condições.
 
-![da46ca69-262d-40d9-893a-883f30a2061d](https://github.com/user-attachments/assets/2f1f4d88-ef4d-485d-87e7-0c22fb2334ba)
+**Exemplo (Login):**
 
-Adicione a estrutura de dados do sistema a ser utilizada aqui.
+* **Pré-condição:** usuário cadastrado e ativo.
+* **Fluxo:** 1) Usuário insere credenciais → 2) Sistema valida → 3) Retorna token de sessão.
+* **Pós-condição:** sessão criada e token com validade configurada.
 
-# 13. Custos
+---
 
-Adicione aqui o calculo dos custos de infraestrutura para executar o sistema
+## 12. Casos de Uso
 
-# 14. Referências
+Documente casos de uso relevantes com sumário, atores, pré-condições, fluxo principal, fluxos alternativos e pós-condições.
+
+#### Exemplo — Gerenciar Professor (CSU01)
+
+* **Sumário:** A Secretária gerencia (incluir, remover, alterar, consultar) dados de professores.
+* **Ator Primário:** Secretária.
+* **Ator Secundário:** Coordenador.
+* **Pré-condição:** Secretária autenticada e autorizada.
+
+**Fluxo Principal:**
+
+1. A Secretária requisita manutenção de professores.
+2. O sistema apresenta as operações disponíveis (inclusão, alteração, exclusão, consulta).
+3. A Secretária seleciona a operação e segue o fluxo correspondente.
+
+**Fluxos Alternativos:**
+
+* Inclusão: validação de CPF, preenchimento de formulário, persistência.
+* Remoção: validação de restrições antes de excluir.
+* Alteração/Consulta: validação dos dados e confirmação.
+
+**Pós-condição:** Dados do professor atualizados conforme operação.
+
+---
+
+## 13. Custos
+
+Apresente o cálculo estimado dos custos de infraestrutura e serviços (por mês e por 12 meses): hosting, banco, filas, balanceamento, contratos de terceiros, licenças e custos de suporte.
+
+> Inclua premissas (número de usuários, requisições/mês, retenção de dados) e como cada premissa impacta o custo.
+
+---
+
+## 14. Referências
+
+Liste documentos, APIs, padrões, normas e links utilizados como base para este documento. Inclua versão e data quando aplicável.
