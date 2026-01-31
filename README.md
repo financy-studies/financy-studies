@@ -13,7 +13,7 @@ Descreva rapidamente o que é o projeto
 
 ## 3. Termos e Significados
 
-Adicione aqui, qualquer termo tecníco junto de sua descrição.
+Adicione aqui, qualquer termo técnico junto de sua descrição.
 
 ## 4. Introdução
 
