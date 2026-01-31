@@ -1,29 +1,25 @@
 # Documento de Requisitos do Sistema
 
-## 1. Título do Projeto
+## 1. Definição Curta
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Descreva rapidamente o que é o projeto
 
 ## 2. Integrantes
 
 * Nome completo do integrante 1
 * Nome completo do integrante 2
 * Nome completo do integrante 3
-* Nome completo do integrante 4
+* Nome completo do integrante 4 
 
-## 3. Definição Curta
-
-Descreva rapidamente o que é o projeto
-
-## 4. Termos e Significados
+## 3. Termos e Significados
 
 Adicione aqui, qualquer termo tecníco junto de sua descrição.
 
-## 5. Introdução
+## 4. Introdução
 
 Descreva o que é projeto, sua missão, benefícios, etc.
 
-## 6. Objetivos
+## 5. Objetivos
 Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
 - O objetivo geral deve resumir e apresentar a ideia central de um trabalho, descrevendo também a sua finalidade. 
 - Os objetivos específicos darão uma maior delimitação ao tema, além de detalhar os processos necessários para a realização do trabalho.
