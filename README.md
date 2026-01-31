@@ -1,25 +1,13 @@
 # Título do Projeto
 
-`CURSO: Sistemas de Informação`
-
-`DISCIPLINA: Projeto - Design de Centrado no Usuário`
-
-`SEMESTRE: 3º`
-
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
-
-## Orientador
-
-* Nome completo do professor 
+* Nome completo do integrante 1
+* Nome completo do integrante 2
+* Nome completo do integrante 3
+* Nome completo do integrante 4
 
 # Planejamento
 
@@ -31,10 +19,6 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 | ETAPA 4        |[Testes de Software](docs/testes.md) |
 | ETAPA 5         | [Apresentação](docs/apresentacao.md) |
 
-
-# Código
-
-<li><a href="src/codigo.md"> Código Fonte</a></li>
 
 # Apresentação
 
